@@ -1,0 +1,32 @@
+@font-face{
+    font-family: gotham;
+    src: url('/fonts/gotham/Gotham-Medium.otf');
+}
+
+.navigation-bar{
+    background-color: #383838;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+}
+
+.navigation-bar img{
+    height: 50px;
+}
+
+.logo span{
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+    padding-left: 10px;
+    font-weight: 800;
+    font-family: gotham;
+}
+
+.mobile-menu i{
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    top: -40px;
+}
