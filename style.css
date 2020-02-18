@@ -8,6 +8,7 @@
     height: 50px;
     width: 100%;
     position: fixed;
+    z-index: 100000;
 }
 
 .navigation-bar img{
@@ -29,4 +30,44 @@
     font-size: 30px;
     position: relative;
     top: -40px;
+}
+
+.main-home{
+    background: #bdbcbc88;
+    position: relative;
+    top: 50px;
+}
+
+.ff-taco img{
+    height: 30px;
+}
+
+.bar-details{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bar-details span{
+    padding-left: 10px;
+    font-family: gotham;
+    text-transform: capitalize;
+}
+
+.products-sec{
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.products-sec .card{
+    width: 100%;
+    border: 1px solid #cac3c3;
+}
+
+.products-sec .card img{
+    height: 200px;
+}
+
+.product{
+    padding-bottom: 10px;
 }
