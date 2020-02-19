@@ -237,6 +237,50 @@ footer ul {
     display: none;
 }
 
+.category-sec{
+    padding-top: 24px;
+  }
+
+  .category-sec h5{
+    color: #d35266;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: gotham;
+    text-decoration: underline;
+    margin-left: 25px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .category-sec li{
+    text-align: center;
+    padding-top: 15px;
+    color: #000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .footer-input ul {
+      position: relative;
+      top: 20%;
+  }
+
+  .footer-input ul li{
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+
+  .footer-input label{
+      color: #d35266;
+      font-family: gotham;
+      text-transform: capitalize;
+      font-weight: 800;
+  }
+
+  .footer-social-media{
+      border-top: 1px solid #bdb3b3;
+  }
+
 /* media queries */
 
 @media screen and (min-width: 768px) {
@@ -391,6 +435,37 @@ footer ul {
         flex-wrap: unset;
         flex-direction: unset;
     }
+
+    .next-page-buttons{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .next-page-buttons a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+      }
+      
+      .next-page-buttons a:hover {
+        background-color: #d35266;
+        color: black;
+      }
+      
+      .next-page-buttons  .previous {
+        background-color: #d35266;
+        color: black;
+      }
+      
+      .next-page-buttons .next {
+        background-color: #eee;
+        color: #000;
+      }
+     
+    
 }
 
 @media screen and (min-width: 992px) {
@@ -453,5 +528,22 @@ footer ul {
         text-align: left;
         position: relative;
         margin-left: 228px;
+    }
+    .notification span {
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        background: #d35266;
+        text-align: center;
+        border-radius: 50%;
+        top: 0px;
+        margin-left: -8px;
+        color: #fff;
+    }
+    .search-results-page .price-tags {
+        background-color: #d35266;
+        color: #eee;
+        text-align: center;
+        padding-top: 6px;
     }
 }
