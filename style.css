@@ -179,10 +179,10 @@ footer ul {
 
 /* ==== search page ====== */
 
-.mobile-soartings{
-    position: fixed;
-    background-color: #ccc7c7;
-    z-index: 1000000;
+.mobile-soartings {
+    border-bottom: 1px solid #bdb3b3;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .mobile-soartings ul {
@@ -191,26 +191,64 @@ footer ul {
     flex-wrap: wrap;
 }
 
-.mobile-soartings ul li{
+.mobile-soartings ul li {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.mobile-soartings ul .title{
+.mobile-soartings ul .title {
     text-transform: uppercase;
     color: #000;
     font-family: gotham;
     font-weight: 600;
 }
 
-.search-results-page{
+.search-results-page {
     position: relative;
-    top: 245px;
+    top: 15px;
+    padding-bottom: 10px;
+}
+
+.search-results-page .card {
+    max-width: 350px;
+}
+
+.search-results-page .card img {
+    height: 300px;
+}
+
+.search-details-sp {
+    border-bottom: 1px solid #bdb3b3;
+    text-align: center;
+}
+
+.search-details-sp h5 {
+    font-weight: 200;
+}
+
+.products-search-sp {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.desktop-soarting {
+    display: none;
 }
 
 /* media queries */
 
+@media screen and (min-width: 768px) {
+    .search-results-page .card img {
+        height: 155px;
+    }
+}
+
 @media screen and (min-width: 798px) {
+    .profile {
+        display: none;
+    }
     .mobile-menu {
         display: none;
     }
@@ -273,7 +311,7 @@ footer ul {
         justify-content: center;
     }
     .header-details .drop-down {
-        flex: 2;
+        flex: 1;
         padding: unset;
     }
     .drop-down select {
@@ -338,5 +376,82 @@ footer ul {
         padding-left: 20px;
         font-weight: 600;
         text-transform: uppercase;
+    }
+    /* ===search page === */
+    .search-page-header .header-details h1 {
+        text-align: left;
+        padding-left: 0;
+    }
+    .search-page-header .header-details h2 {
+        text-align: left;
+    }
+    .search-page-header .header-details .header-search-inputs {
+        justify-content: unset;
+        display: unset;
+        flex-wrap: unset;
+        flex-direction: unset;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .profile {
+        display: inline;
+        position: relative;
+        left: 15%;
+    }
+    .desk-navigation ul li {
+        padding-left: 10px;
+        padding-right: 50px;
+    }
+    .mobile-soartings {
+        display: none;
+    }
+    .search-results-page .card {
+        max-width: 100%;
+    }
+    .desktop-soarting {
+        display: inline;
+        border-right: 1px solid #bdb3b3;
+        position: relative;
+        top: -38px;
+    }
+    .search-results-page .card img {
+        height: 230px;
+        position: relative;
+        top: -25px;
+    }
+    .search-details-sp {
+        position: relative;
+        top: -38px;
+    }
+    .products-search-sp {
+        padding-top: 0px;
+    }
+    .desktop-soarting ul {
+        list-style-type: none;
+        border-bottom: 1px solid #bdb3b3;
+    }
+    .r-1 {
+        display: flex;
+        padding-top: 30px;
+        flex-wrap: nowrap;
+    }
+    input[type=checkbox] {
+        height: 18px;
+        width: 18px;
+    }
+    .desktop-soarting ul li {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .title {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: gotham;
+    }
+    .search-details-sp h5 {
+        text-align: left;
+        position: relative;
+        margin-left: 228px;
     }
 }
