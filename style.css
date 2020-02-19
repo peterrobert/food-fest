@@ -20,6 +20,10 @@
     height: 50px;
 }
 
+.desk-navigation {
+    display: none;
+}
+
 .logo span {
     color: #fff;
     font-size: 20px;
@@ -51,6 +55,10 @@
 .bar-details {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.desktop-tab-header{
+    display: none;
 }
 
 .bar-details span {
@@ -94,7 +102,7 @@
     flex-direction: row;
 }
 
-.add-collection{
+.add-collection {
     flex: 1;
 }
 
@@ -115,6 +123,7 @@
 .products-sec .card {
     width: 100%;
     border: 1px solid #cac3c3;
+    min-height: 450px;
 }
 
 .products-sec .card img {
@@ -162,4 +171,40 @@ footer .category-sec h3 {
 
 footer ul {
     list-style-type: none;
+}
+
+/* media queries */
+
+@media screen and (min-width: 798px) {
+    .mobile-menu {
+        display: none;
+    }
+    .desk-navigation {
+        display: inline;
+    }
+    .desk-navigation ul {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        list-style-type: none;
+        position: relative;
+        top: 3px;
+    }
+    .desk-navigation ul .active {
+        color: #d35266;
+    }
+    .desk-navigation ul li {
+        color: #888888;
+        padding: 10px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .desk-navigation ul :nth-child(4) {
+        background-color: #d35266;
+        color: #fff;
+    }
+
+    .desktop-tab-header{
+        display: inline;
+    }
 }
