@@ -1,9 +1,14 @@
-@font-face{
+@font-face {
     font-family: gotham;
     src: url('/fonts/gotham/Gotham-Medium.otf');
 }
 
-.navigation-bar{
+@font-face {
+    font-family: Helvetica;
+    src: url('/fonts/Helvetica.ttf');
+}
+
+.navigation-bar {
     background-color: #383838;
     height: 50px;
     width: 100%;
@@ -11,11 +16,11 @@
     z-index: 100000;
 }
 
-.navigation-bar img{
+.navigation-bar img {
     height: 50px;
 }
 
-.logo span{
+.logo span {
     color: #fff;
     font-size: 20px;
     position: relative;
@@ -23,51 +28,138 @@
     padding-left: 10px;
     font-weight: 800;
     font-family: gotham;
+    text-transform: uppercase;
 }
 
-.mobile-menu i{
+.mobile-menu i {
     color: #fff;
     font-size: 30px;
     position: relative;
     top: -40px;
 }
 
-.main-home{
+.main-home {
     background: #bdbcbc88;
     position: relative;
     top: 50px;
 }
 
-.ff-taco img{
+.ff-taco img {
     height: 30px;
 }
 
-.bar-details{
+.bar-details {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.bar-details span{
+.bar-details span {
     padding-left: 10px;
     font-family: gotham;
     text-transform: capitalize;
 }
 
-.products-sec{
+.card-title {
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.products-sec {
     border-top: 1px solid #eee;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.products-sec .card{
+.order-ready {
+    width: 50%;
+    text-align: left;
+    color: #d35266;
+    font-family: gotham;
+    text-transform: capitalize;
+}
+
+.card h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.card-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.add-collection{
+    flex: 1;
+}
+
+.card-buttons .add-collection i {
+    font-size: 30px;
+    color: #888888;
+    cursor: pointer;
+}
+
+.price-tags {
+    flex: 1;
+    color: #d35266;
+    font-family: gotham;
+    text-align: right;
+    font-size: 20px;
+}
+
+.products-sec .card {
     width: 100%;
     border: 1px solid #cac3c3;
 }
 
-.products-sec .card img{
+.products-sec .card img {
     height: 200px;
 }
 
-.product{
+.product {
     padding-bottom: 10px;
+}
+
+footer {
+    border-top: 1px solid #eee;
+    position: relative;
+    top: 50px;
+    background-color: #fff;
+}
+
+footer .logo img {
+    height: 50px;
+}
+
+footer .logo span {
+    color: #aba4a4;
+    text-transform: uppercase;
+}
+
+footer p {
+    padding-top: 10px;
+    text-align: left;
+    color: #aba4a4;
+    font-family: Helvetica;
+    font-weight: 200;
+}
+
+.logo-sec {
+    padding-top: 10px;
+}
+
+footer .category-sec h3 {
+    color: #d35266;
+    position: relative;
+    left: 100%;
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style-type: none;
 }
