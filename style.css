@@ -57,7 +57,7 @@
     padding-bottom: 10px;
 }
 
-.desktop-tab-header{
+.desktop-tab-header {
     display: none;
 }
 
@@ -203,8 +203,62 @@ footer ul {
         background-color: #d35266;
         color: #fff;
     }
-
-    .desktop-tab-header{
-        display: inline;
+    .desktop-tab-header {
+        height: 350px;
+        display: block;
+        background-color: #d35266;
+        border-radius: unset;
+    }
+    .header-details {
+        text-align: center;
+    }
+    .header-details h1 {
+        color: #fff;
+        padding-left: 10px;
+        font-weight: 800;
+        font-family: gotham;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    .header-details h2 {
+        text-transform: capitalize;
+        font-weight: 400;
+        padding-top: 10px;
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+        color: #fff;
+    }
+    .header-details .header-search-inputs {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+    }
+    .header-details .drop-down {
+        width: 25%;
+    }
+    .drop-down select {
+        width: 100%;
+        height: 38px;
+        border: unset;
+        position: relative;
+        top: 1px;
+    }
+    .search-input input {
+        width: 100%;
+        height: 38px;
+        border: unset;
+        position: relative;
+        top: 1px;
+        border-left: 1px solid #000;
+    }
+    .submit-search button {
+        width: 60%;
+        background-color: #000;
+        color: #fff;
+        height: 38px;
+        border: unset;
+        position: relative;
+        top: 1px;
     }
 }
