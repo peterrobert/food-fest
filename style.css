@@ -24,6 +24,10 @@
     display: none;
 }
 
+.ads-section-desk {
+    display: none;
+}
+
 .logo span {
     color: #fff;
     font-size: 20px;
@@ -173,6 +177,37 @@ footer ul {
     list-style-type: none;
 }
 
+/* ==== search page ====== */
+
+.mobile-soartings{
+    position: fixed;
+    background-color: #ccc7c7;
+    z-index: 1000000;
+}
+
+.mobile-soartings ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mobile-soartings ul li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.mobile-soartings ul .title{
+    text-transform: uppercase;
+    color: #000;
+    font-family: gotham;
+    font-weight: 600;
+}
+
+.search-results-page{
+    position: relative;
+    top: 245px;
+}
+
 /* media queries */
 
 @media screen and (min-width: 798px) {
@@ -227,15 +262,19 @@ footer ul {
         font-size: 1.5rem;
         padding-bottom: 10px;
         color: #fff;
+        letter-spacing: 0px;
+        padding-top: 20px;
+        padding-bottom: 40px;
     }
     .header-details .header-search-inputs {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
-        width: 100%;
+        justify-content: center;
     }
     .header-details .drop-down {
-        width: 25%;
+        flex: 2;
+        padding: unset;
     }
     .drop-down select {
         width: 100%;
@@ -260,5 +299,44 @@ footer ul {
         border: unset;
         position: relative;
         top: 1px;
+        float: right;
+    }
+    .ads-section-desk {
+        display: block;
+        background-color: #fff;
+        position: relative;
+        top: -32px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .ads-section-desk img {
+        height: 200px;
+        width: 100%;
+    }
+    .ads-section-desk h5 {
+        text-align: center;
+        padding: 10px;
+        font-family: gotham;
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: #888888;
+    }
+    .ads-section-desk .sec-details {
+        padding-top: 40px;
+    }
+    .ads-section-desk .sec-details button {
+        background-color: #d35266;
+        color: #fff;
+        border: unset;
+        outline: none;
+        padding: 5px;
+    }
+    .ads-section-desk .sec-details p {
+        width: 90%;
+    }
+    .ads-section-desk .sec-details button span {
+        padding-left: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
     }
 }
