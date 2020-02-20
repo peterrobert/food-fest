@@ -31,8 +31,8 @@
                     <!-- desktop navigation -->
                     <div class="desk-navigation">
                         <ul>
-                            <li class="active">home </li>
-                            <li> collections</li>
+                            <li> <a href="index.html">home</a> </li>
+                            <li class="active"> <a href="searchpage.html">collections</a></li>
                             <li>purchase list</li>
                             <li>post ad</li>
                             <li class="profile">
@@ -46,10 +46,20 @@
                 </div>
 
             </div>
-
             <!-- mobile navigation -->
             <div class="pull-right mobile-menu">
-                <i class="fa fa-bars" aria-hidden="true"></i>
+
+                <span onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i>
+                </span>
+                
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">home</a>
+                    <a href="searchpage.html">collections</a>
+                    <a href="#">purchase list</a>
+                    <a href="#">Contact</a>
+                  </div>
+                  
             </div>
 
         </div>
@@ -66,7 +76,7 @@
                 <div class="header-search-inputs">
                     <div class="row">
                         <div class="drop-down">
-                            <form action="">
+                            <form action="#">
                                 <select id="cars" name="cars">
                                     <option value="volvo">All departments</option>
                                     <option value="saab">Saab</option>
@@ -96,6 +106,7 @@
         </div>
 
         <section class="mobile-soartings">
+            <h2 class="dummy">dummy</h2>
             <ul class="rent-owner">
                 <li>
                     <div class="form-check">
@@ -297,7 +308,7 @@
                         </ul>
 
                     </aside>
-                    <div class="col-lg-9">
+                    <div class="col-lg-9 mobil-r-se">
                         <div class="card mb-3">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
@@ -484,13 +495,14 @@
                             </div>
                         </div><!-- card -->
 
-                        <div class="next-page-buttons">
-                            <a href="#" class="previous">1</a>
-                            <a href="#" class="next">2</a>
-                            <a href="#" class="next">3</a>
-                            <a href="#" class="next">4</a>
 
-                        </div>
+
+                    </div>
+                    <div class="next-page-buttons">
+                        <a href="#" class="previous">1</a>
+                        <a href="#" class="next">2</a>
+                        <a href="#" class="next">3</a>
+                        <a href="#" class="next">4</a>
 
                     </div>
                 </div>
@@ -501,7 +513,7 @@
 
     <footer class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-4 logo-sec">
+            <div class="col-xs-12 col-md-12 col-lg-4 logo-sec">
                 <div class="logo">
                     <img src="images/logo.png" alt="logo"><span>food fest</span>
 
@@ -514,50 +526,28 @@
 
                 </div>
             </div>
-            <div class="col-xs-12 col-md-4 category-sec">
+            <div class="col-xs-12 col-md-12   col-lg-4 category-sec">
                 <div class="cat-sec-de">
                     <h5>categories</h5>
                 </div>
                 <ul>
-                    <li>real estate</li>
-                    <li>real estate</li>
-                    <li>real estate</li>
-                    <li>real estate</li>
-                    <li>real estate</li>
-                    <li>real estate</li>
-                    <li>real estate</li>
-
+                    <li><img src="images/f1.png" alt="category"> Hamburger</li>
+                    <li><img src="images/f1.png" alt="category"> Hamburger</li>
+                    <li><img src="images/f1.png" alt="category"> Hamburger</li>
+                    <li><img src="images/f1.png" alt="category"> Hamburger</li>
+                    <li><img src="images/f1.png" alt="category"> Hamburger</li>
+                    <li><img src="images/f1.png" alt="category"> Hamburger</li>
                 </ul>
 
             </div>
-            <div class="col-xs-12 col-md-4 footer-input">
-
-                <ul>
-                    <li><label for="gsearch">country</label>
-                        <input type="search" id="gsearch" name="gsearch"></li>
-
-                    <li><label for="gsearch">language</label>
-                        <input type="search" id="g-search" name="gsearch"></li>
-                    <li><label for="gsearch">currency</label>
-                        <input type="search" id="gsearch-1" name="gsearch"></li>
-                </ul>
+            <div class="col-xs-12 col-md-12   col-lg-4 footer-input">
+                <h5>have a taste of the best burgers in town</h5>
+                <img src="images/footerbug.png" alt="foot">
 
             </div>
-        </div>
-
-        <div class="footer-social-media">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-
-                    </div>
-                    <div class="col-md-6"></div>
-                </div>
-            </div>
-
-
         </div>
     </footer>
+
 
     <!-- scripts -->
 

@@ -31,12 +31,16 @@
                     <!-- desktop navigation -->
                     <div class="desk-navigation">
                         <ul>
-                            <li class="active">home </li>
-                            <li> collections</li>
+                            <li class="active"> <a href="index.html">home</a>  </li>
+                            <li> <a href="searchpage.html">collections</a> </li>
                             <li>purchase list</li>
                             <li>post ad</li>
-                            <li></li>
-                            <li></li>
+                            <li class="profile">
+                                <div class="notification">
+                                    <i class="fa fa-bell" aria-hidden="true"></i>
+                                    <span>3</span>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -45,7 +49,18 @@
 
             <!-- mobile navigation -->
             <div class="pull-right mobile-menu">
-                <i class="fa fa-bars" aria-hidden="true"></i>
+
+                <span onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i>
+                </span>
+                
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">home</a>
+                    <a href="searchpage.html">collections</a>
+                    <a href="#">purchase list</a>
+                    <a href="#">Contact</a>
+                  </div>
+                  
             </div>
 
         </div>
@@ -62,7 +77,7 @@
                 <div class="header-search-inputs container-fluid">
                     <div class="row">
                         <div class="drop-down">
-                            <form action="">
+                            <form action="#">
                                 <select id="cars" name="cars">
                                     <option value="volvo">All departments</option>
                                     <option value="saab">Saab</option>
@@ -93,6 +108,7 @@
 
         <section class="ads-section-desk">
             <div class="container">
+               
                 <div class="row">
 
                     <div class="col-md-3">
@@ -206,7 +222,7 @@
                             <div class="card">
                                 <img class="card-img-top" src="images/taco5.png" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">taco , a meal for lunch and dinner</h5>
+                                    <h5 class="card-title">taco , a meal for lunch and dinner ready</h5>
                                     <div class="card-text">
                                         <div class="order-ready">
                                             ready for order
@@ -456,7 +472,7 @@
                             <div class="card">
                                 <img class="card-img-top" src="images/pizz2.png" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">pizza , a meal for lunch and dinner</h5>
+                                    <h5 class="card-title">pizza , a meal for lunch and dinner ready</h5>
                                     <div class="card-text">
                                         <div class="order-ready">
                                             ready for order
@@ -487,7 +503,7 @@
 
     <footer class="container">
         <div class="row">
-            <div class="col-xs-12 text-center logo-sec">
+            <div class="col-xs-12 col-md-12 col-lg-4 logo-sec">
                 <div class="logo">
                     <img src="images/logo.png" alt="logo"><span>food fest</span>
 
@@ -500,26 +516,28 @@
 
                 </div>
             </div>
-            <div class="col-xs-12 category-sec text-center">
-                <h3>category</h3>
-
+            <div class="col-xs-12 col-md-12   col-lg-4 category-sec">
+                <div class="cat-sec-de">
+                    <h5>categories</h5>
+                </div>
                 <ul>
-                    <li>real estate</li>
-                    <li>real estate</li>
-                    <li>real estate</li>
-                    <li>real estate</li>
-                    <li>real estate</li>
-                    <li>real estate</li>
-                    <li>real estate</li>
-                    <li>real estate</li>
+                   <li><img src="images/f1.png" alt="category"> Hamburger</li>
+                   <li><img src="images/f1.png" alt="category"> Hamburger</li>
+                   <li><img src="images/f1.png" alt="category"> Hamburger</li>
+                   <li><img src="images/f1.png" alt="category"> Hamburger</li>
+                   <li><img src="images/f1.png" alt="category"> Hamburger</li>
+                   <li><img src="images/f1.png" alt="category"> Hamburger</li>
                 </ul>
 
             </div>
-            <div class="col-xs-12">
+            <div class="col-xs-12 col-md-12   col-lg-4 footer-input">
+                 <h5>have a taste of the best burgers in town</h5>
+                <img src="images/footerbug.png" alt="foot">
 
             </div>
         </div>
     </footer>
+
 
     <!-- scripts -->
 

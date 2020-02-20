@@ -8,6 +8,13 @@
     src: url('/fonts/Helvetica.ttf');
 }
 
+a{
+    color: inherit;
+}
+a :hover{
+    color: inherit;
+
+}
 .navigation-bar {
     background-color: #383838;
     height: 50px;
@@ -39,12 +46,45 @@
     text-transform: uppercase;
 }
 
+.dummy{
+    display: none;
+}
+
 .mobile-menu i {
     color: #fff;
     font-size: 30px;
     position: relative;
     top: -40px;
+    cursor: pointer;
 }
+
+.mobile-menu .sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+ 
+  .mobile-menu .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+  .mobile-menu .sidenav a:hover {
+    color: #f1f1f1;
+  }
 
 .main-home {
     background: #bdbcbc88;
@@ -112,7 +152,8 @@
 
 .card-buttons .add-collection i {
     font-size: 30px;
-    color: #888888;
+    color: #000;
+    font-weight: 500;
     cursor: pointer;
 }
 
@@ -127,11 +168,17 @@
 .products-sec .card {
     width: 100%;
     border: 1px solid #cac3c3;
-    min-height: 450px;
+    min-height: 390px;
 }
 
 .products-sec .card img {
     height: 200px;
+}
+
+.mobil-r-se {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .product {
@@ -144,7 +191,9 @@ footer {
     top: 50px;
     background-color: #fff;
 }
-
+footer .logo{
+   text-align: center;
+}
 footer .logo img {
     height: 50px;
 }
@@ -154,9 +203,18 @@ footer .logo span {
     text-transform: uppercase;
 }
 
+.footer-input{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.footer-social-media ul{
+    float: unset;
+}
+
 footer p {
     padding-top: 10px;
-    text-align: left;
+    text-align: center;
     color: #aba4a4;
     font-family: Helvetica;
     font-weight: 200;
@@ -237,11 +295,31 @@ footer ul {
     display: none;
 }
 
-.category-sec{
+.next-page-buttons {
+    padding-bottom: 20px;
+}
+.next-page-buttons a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+.next-page-buttons a:hover {
+    background-color: #d35266;
+    color: black;
+}
+.next-page-buttons .previous {
+    background-color: #d35266;
+    color: black;
+}
+.next-page-buttons .next {
+    background-color: #eee;
+    color: #000;
+}
+.category-sec {
     padding-top: 24px;
-  }
+}
 
-  .category-sec h5{
+.category-sec h5 {
     color: #d35266;
     text-transform: uppercase;
     font-weight: 800;
@@ -250,36 +328,34 @@ footer ul {
     margin-left: 25px;
     text-align: center;
     letter-spacing: 2px;
-  }
+}
 
-  .category-sec li{
+.category-sec li {
     text-align: center;
     padding-top: 15px;
     color: #000;
-    letter-spacing: 1px;
+    letter-spacing: 0;
     text-transform: uppercase;
-  }
-  
-  .footer-input ul {
-      position: relative;
-      top: 20%;
-  }
+    font-weight: 800;
+    font-family: gotham;
+}
 
-  .footer-input ul li{
-      padding-top: 20px;
-      padding-bottom: 20px;
-  }
+.category-sec li img{
+    height: 30px;
+}
 
-  .footer-input label{
-      color: #d35266;
-      font-family: gotham;
-      text-transform: capitalize;
-      font-weight: 800;
-  }
-
-  .footer-social-media{
-      border-top: 1px solid #bdb3b3;
-  }
+.footer-input img{
+    margin-top: 40px;
+    height: 200px;
+}
+ 
+.footer-input h5{
+    padding-top: 26px;
+    color: #aba4a4;
+    text-transform: uppercase;
+    font-family: gotham;
+    font-weight: 600;
+}
 
 /* media queries */
 
@@ -331,7 +407,6 @@ footer ul {
     }
     .header-details h1 {
         color: #fff;
-        padding-left: 10px;
         font-weight: 800;
         font-family: gotham;
         text-transform: uppercase;
@@ -347,12 +422,6 @@ footer ul {
         letter-spacing: 0px;
         padding-top: 20px;
         padding-bottom: 40px;
-    }
-    .header-details .header-search-inputs {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: center;
     }
     .header-details .drop-down {
         flex: 1;
@@ -374,7 +443,7 @@ footer ul {
         border-left: 1px solid #000;
     }
     .submit-search button {
-        width: 60%;
+        width: 90%;
         background-color: #000;
         color: #fff;
         height: 38px;
@@ -390,6 +459,7 @@ footer ul {
         top: -32px;
         padding-top: 10px;
         padding-bottom: 10px;
+        min-height: 370px;
     }
     .ads-section-desk img {
         height: 200px;
@@ -397,14 +467,15 @@ footer ul {
     }
     .ads-section-desk h5 {
         text-align: center;
-        padding: 10px;
+        padding: 30px;
         font-family: gotham;
         text-transform: uppercase;
         font-size: 1rem;
         color: #888888;
+        font-weight: 600;
     }
     .ads-section-desk .sec-details {
-        padding-top: 40px;
+        padding-top: 70px;
     }
     .ads-section-desk .sec-details button {
         background-color: #d35266;
@@ -413,8 +484,16 @@ footer ul {
         outline: none;
         padding: 5px;
     }
+
+    .ads-section-desk .sec-details h3{
+         color: #d35266;
+         font-family: gotham;
+         text-transform: capitalize;
+         font-weight: 600;
+    }
+
     .ads-section-desk .sec-details p {
-        width: 90%;
+        width: 100%;
     }
     .ads-section-desk .sec-details button span {
         padding-left: 20px;
@@ -435,48 +514,18 @@ footer ul {
         flex-wrap: unset;
         flex-direction: unset;
     }
-
-    .next-page-buttons{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        padding-top: 20px;
-        padding-bottom: 40px;
-    }
-
-    .next-page-buttons a {
-        text-decoration: none;
-        display: inline-block;
-        padding: 8px 16px;
-      }
-      
-      .next-page-buttons a:hover {
-        background-color: #d35266;
-        color: black;
-      }
-      
-      .next-page-buttons  .previous {
-        background-color: #d35266;
-        color: black;
-      }
-      
-      .next-page-buttons .next {
-        background-color: #eee;
-        color: #000;
-      }
-     
-    
+   
 }
 
 @media screen and (min-width: 992px) {
     .profile {
         display: inline;
         position: relative;
-        left: 15%;
+        left: 5%;
     }
     .desk-navigation ul li {
         padding-left: 10px;
-        padding-right: 50px;
+        padding-right: 30px;
     }
     .mobile-soartings {
         display: none;
