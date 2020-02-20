@@ -22,7 +22,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/peterrobert/NewsWeek/2e61534a99b1919bb4499f29828bae9e8e4505ff/index.html)
+[Live Demo Link](https://rawcdn.githack.com/peterrobert/food-fest/6ed8d801d74d87a0ccf0c4ac6d6699a9ac8d5aa6/index.html)
 
 
 ## Getting Started
@@ -65,8 +65,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Design idea by Mohammed Awad on Behance
+
 
 ## 📝 License
 
