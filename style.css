@@ -266,6 +266,10 @@ footer .category-sec h3 {
   font-family: 'Noto Sans SC', sans-serif;
 }
 
+.category-sec img{
+  height: 30px;
+}
+
 .mobile-soartings ul li {
   padding-left: 10px;
   padding-right: 10px;
