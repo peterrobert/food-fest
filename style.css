@@ -176,6 +176,10 @@ a :hover {
   min-height: 390px;
 }
 
+.category-sec img {
+  height: 30px;
+}
+
 footer .logo img {
   height: 50px;
 }
@@ -264,10 +268,6 @@ footer .category-sec h3 {
   text-transform: uppercase;
   font-weight: 800;
   font-family: 'Noto Sans SC', sans-serif;
-}
-
-.category-sec img{
-  height: 30px;
 }
 
 .mobile-soartings ul li {
