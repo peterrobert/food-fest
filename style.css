@@ -372,6 +372,20 @@ footer .category-sec h3 {
   font-weight: 600;
 }
 
+.foot-social-ff{
+  border-top: 1px solid #cac3c3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase; 
+}
+
+.foot-social-ff small{
+  font-weight: 800;
+}
+
 /* media queries */
 
 @media screen and (min-width: 768px) {
