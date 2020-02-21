@@ -2,7 +2,7 @@
 
 > This is the HTML adnd CSS capstone project the obejctive is to create a website for an ecommerce platform. Using only the conceptual design to build the site taking care of user experience and UI design.
 
-In my case I decided to design my website for a fantasy fast food ecommerce platform
+> In my case I decided to design my website for a fantasy fast food ecommerce platform
 
 ## Presentation Video Link
 
@@ -10,11 +10,32 @@ In my case I decided to design my website for a fantasy fast food ecommerce plat
 
 # The requirements of this project are:
 
+### Design
+
+- The main page with link to the search results page.
+- The search page.
+
+### Resolution
+
+- Mobile upto 768px
+- Desktop from 768px
+
+### Guidelines design
+
+- colors
+- typographies: font face , size  and weight
+- layout: Compositionand space between elements, for the 2 given screen sizes.
+
+
 # HomePage
+
+- The homePage has the basic information of the ecommerce platform. This consist products that the food store sells.
 
 ![screenshot](screenshot-1.png)
 
 # SearchPage
+
+- The SearchPage has the basic information of the ecommerce platform. This consist the results of search functionality that happens on the homepage.
 
 ![screenshot](screenshot-2.png)
 
