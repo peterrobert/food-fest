@@ -221,6 +221,7 @@ footer .logo span {
 
 footer ul {
   list-style-type: none;
+  padding: unset;
 }
 
 .footer-social-media ul {
@@ -340,7 +341,6 @@ footer .category-sec h3 {
   font-weight: 800;
   font-family: 'Noto Sans SC', sans-serif;
   text-decoration: underline;
-  margin-left: 25px;
   text-align: center;
   letter-spacing: 2px;
 }
