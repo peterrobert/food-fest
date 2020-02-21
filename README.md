@@ -10,7 +10,7 @@
 
 ## Presentation Video Link
 
-[ Presentation Video Link ](https://rawcdn.githack.com/peterrobert/food-fest/6ed8d801d74d87a0ccf0c4ac6d6699a9ac8d5aa6/index.html)
+[ Presentation Video Link ](https://www.loom.com/share/2ab6561f7c064d2d8365d817883a611b)
 
 # The requirements of this project are:
 
@@ -55,7 +55,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/peterrobert/food-fest/6ed8d801d74d87a0ccf0c4ac6d6699a9ac8d5aa6/index.html)
+[Live Demo Link](https://rawcdn.githack.com/peterrobert/food-fest/dfd4a3e1f6033b128d31db5e3a2ff3691c94522b/index.html)
 
 
 ## Getting Started
