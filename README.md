@@ -1,6 +1,14 @@
 # Food Fest
 
-> This is the HTML CSS capstone project
+> This is the HTML adnd CSS capstone project the obejctive is to create a website for an ecommerce platform. Using only the conceptual design to build the site taking care of user experience and UI design.
+
+In my case I decided to design my website for a fantasy fast food ecommerce platform
+
+## Presentation Video Link
+
+[ Presentation Video Link ](https://rawcdn.githack.com/peterrobert/food-fest/6ed8d801d74d87a0ccf0c4ac6d6699a9ac8d5aa6/index.html)
+
+# The requirements of this project are:
 
 # HomePage
 
