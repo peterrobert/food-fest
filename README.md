@@ -50,6 +50,7 @@ Additional description about the project and its features.
 - HTML and CSS,
 - bootstrap 4,
 - Font-Awesome library,
+- Javascript
 
 
 
