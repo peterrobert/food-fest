@@ -1,10 +1,11 @@
 # Food Fest
 
-> This is the HTML and CSS capstone project the objective is to create a website for an ecommerce platform. Using only the conceptual design to build the site taking care of user experience and UI design.
+> This is the HTML and CSS capstone project the objective is to create a website for an e-commerce platform. Using only the conceptual design to build the site takes care of user experience and UI design.
 
-> In my case I decided to design my website for a fantasy fast food ecommerce platform
+> In my case I decided to design my website for a fantasy fast food e-commerce platform
+> I have developed this website with basic HTML CSS but am in the process of converting it to a WordPress site
 
-## Link to conceptual design by Mohammed Awad
+## Link to the conceptual design by Mohammed Awad
 
 [ conceptual design ](https://www.behance.net/gallery/24796463/ZATTIX)
 
